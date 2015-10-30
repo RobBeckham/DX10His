@@ -1,0 +1,159 @@
+SCRIPT DX10His(DX10HIS)                                                         
+*Configurations for DX10HIS script                                            
+* configure the trace                                                       
+tracepath /c1/RAUT/SCRIPT/S/ROB.trace                                      
+*                                                                         
+* Configure the SQL access                                               
+o_user XXX                                                             
+o_pass XXX                                                        
+o_ds XXX                                                             
+o_db XXX                                                            
+           
+* Record header                                                     
+MAP_DX_RH C.DX.RH                                     
+* Diagnosis date                                     
+MAP_DX_DATE C.DXDATE                
+* Diagnosinf staff id              
+MAP_DX_STAF C.DXSTAF                                                            
+* Diagnosis entry staff id                                                                    
+         
+MAP_DX_ID C.DG.ID                                                     
+          
+* Economic                                                           
+                     
+MAP_DX_AXIS4ECO C.AXIS4ECO                                
+                      
+* Education                                              
+                                  
+MAP_DX_AXIS4EDU C.AXIS4EDU                   
+                                   
+* Health Care                               
+                                                 
+MAP_DX_AXIS4HEA C.AXIS4HEA    
+                                                  
+* Housing                    
+                                                            
+MAP_DX_AXIS4HOU C.AXIS4HOU                                                      
+* Legal           
+                                                                     
+MAP_DX_AXIS4LEG C.AXIS4LEG                                                      
+* Occupational                                                                           
+     
+MAP_DX_AXIS4OCC C.AXIS4OCC                                                
+      
+* Primary support                                                        
+                        
+MAP_DX_AXIS4SUP C.AXIS4SUP                             
+                         
+* PsychoSocial                                        
+                                        
+MAP_DX_AXIS4OTH C.AXIS4OTH             
+                                         
+* Social Environment                  
+                                                              
+MAP_DX_AXIS4SOC C.AXIS4SOC                                                      
+* Action taken  
+                                                                              
+MAP_DX_ACT C.DXACT                                                              
+
+* Primary axis                                                                  
+              
+MAP_DX_PRI C.PRIDX                                               
+               
+* Axis I                                                        
+                
+MAP_DX_A11 C.PA.AAI                                            
+                 
+MAP_DX_A12 C.PA.ADSA1                                         
+                  
+MAP_DX_A13 C.DXASLEV                                         
+                   
+MAP_DX_A14 C.DXAXLEV4                                       
+                    
+* Axis II                                                  
+                     
+MAP_DX_A21 C.PA.AAII                                      
+                      
+MAP_DX_A22 C.PA.ADSA2                                    
+                       
+MAP_DX_A23 C.DXAXLEV3                                   
+                        
+MAP_DX_A24 C.DXASLVL4                                  
+                         
+* Axis III                                            
+                          
+MAP_DX_A31 C.PA.AAIII                                
+                           
+MAP_DX_A32 C.PA.ADSA3                               
+                            
+* Axis IV                                          
+                             
+MAP_DX_A41 C.PA.AAIV                              
+                              
+MAP_DX_A42 C.DXAXLVL2                            
+                               
+MAP_DX_A43 C.AXDXLVL3                           
+                                
+MAP_DX_A44 C.DXAXLVL4                          
+                                 
+MAP_DX_A45 C.DXAXLVL5                         
+                                  
+MAP_DX_A46 C.DXAXLVL6                        
+                                   
+MAP_DX_A47 C.DXAXLVL7                       
+                                    
+MAP_DX_A48 C.DXAXLVL8                      
+                                     
+MAP_DX_A49 C.DXAXLVL9                     
+                                      
+MAP_DX_A410 C.DXAXLVL0                   
+                                       
+* Axis V                                
+                                        
+MAP_DX_A51 C.PA.AAV                    
+                                         
+MAP_DX_A52 C.DXAXVPRI                 
+                                          
+* AAMD ABL                           
+                                           
+MAP_DX_ABLCUR C.DXABLCUR            
+                                            
+MAP_DX_ABLPOT C.DXABLPOT           
+                                             
+* DCT for Axis 3 descriptions     
+                                                                      
+dct.axis.3 44                                                                   
+* DCT for Axis 4 descriptions                                                           
+              
+dct.axis.4 2084                                                  
+               
+* DCT for Axis 5 descriptions                                   
+                                    
+dct.axis.5 2085                            
+                                     
+* DCT for ABL descriptions                
+                                                        
+dct.abl.table 215      
+                                                         
+* DCT for action taken
+                                                                          
+dct.act.tak 217                                                                 
+* Display what ICD - 9, 10 or All                                                   
+          
+dspwhaticd A        
+* Group codes that can void
+whocanvoid 12|13
+* Group codes that can update
+whocanupdate 13
+* Group codes for DX10DE parmfile
+whocanDE 14
+* Group codes for DX10PRM parmfile
+whocanPRM 15                                        
+* Group codes for display/hide voids
+seethevoid 16
+                 
+                                      
+                                         
+                         
+            
+                                         
